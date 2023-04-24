@@ -127,10 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Base.cpp" />
+    <ClCompile Include="Child.cpp" />
+    <ClCompile Include="ChildOne.cpp" />
+    <ClCompile Include="ChildTwo.cpp" />
+    <ClCompile Include="Parent.cpp" />
     <ClCompile Include="Structur_Objective.cpp" />
     <ClCompile Include="Tester.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Base.h" />
+    <ClInclude Include="Child.h" />
+    <ClInclude Include="ChildOne.h" />
+    <ClInclude Include="ChildTwo.h" />
+    <ClInclude Include="Parent.h" />
     <ClInclude Include="Tester.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
