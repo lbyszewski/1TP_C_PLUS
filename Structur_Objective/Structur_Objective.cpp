@@ -1,77 +1,26 @@
-
-
 #include <iostream>
+#include "Tester.h"
+
+// miejsce na do³aczanie klas w odrêbnych plikach przez #include "nazwa.h"
 using namespace std;
 
 
 
-// nowa funkcja argumentowa zwracana
-int func(int a) {
-	int res = a * a;
-	return res;
-}
 
+// Jêzyk obiektowy  C++
 
-// funkcja bezargumentowa nie zwracana
-void showSomeName() {
-	cout << " Hi my name is: " << endl;
-}
-
-// Jêzyk strukturlany C++
-
-// funkcja main wyœwietlaj¹ca wszystkie instrukcje dotycz¹ce jêzyka C++
+// funkcja main przekszta³cona w metodê main
 
 int main()
 {
-   // deklaracja zmiennych 
-	int valueA;
+    // obiekt poprzez podanie referencji , dodanie klasy do #include i nazwê w³asn¹
 
-   // inicjalizacja zmiennych 
-	int valueSum = 0;
+    // konstruujemy wed³ug konstruktora argumetowego obiekt , który bêdzie zawiera³ dwie wartoœci
 
-	// strumieñ wyjœcia
+    Tester test(2, 3);
 
-	cout << "podaj wartosc" << endl;
+    // odwo³anie do metody wyœwietleniowej z obiektu
+    test.show();
 
-	// strumieñ wejœcia
-
-	cin >> valueA;
-  
-
-	// instrukcja warunkowa IF
-
-	if (valueA > 0) {
-		valueSum += valueA;
-	}
-	else
-	{
-		cout << " nie da siê " << endl;
-	}
-
-	// pêtla for 
-
-	for (int i = 0; i < 10; i++)
-	{
-		cout << i << endl;
-	}
-	// operatory arytmetyczne
-	//   + * - / >= <= < > % - modulo , += , *= , /= -= 
-
-	// operatory logiczne
-	// && - i  , || - lub , != - negacja (zaprzeczenie) - ró¿ne
-
-
-	// pêtla while 
-	int i = 0;
-	while (i<10)
-	{
-		i++;
-		cout << i << endl;
-	}
-
-	// odwo³anie do funkcji zwracaniej i niezwracanej
-
-	cout << func(5) << endl;
-	showSomeName();
-}
+ }
 
